@@ -2,7 +2,7 @@
 
 Chordic is an experimental tonal constructed-language research project. The goal is to develop, from first principles, a communication system that can eventually be human-producible, human-learnable, computer-recognizable, compositional, deterministic enough to parse, and useful for robotic communication.
 
-The repository is intentionally starting at **v0.0 — Concept**. It is not a finished language. Git history, failed experiments, revisions, decision records, tests, and negative results are part of the research record.
+The repository intentionally preserves **v0.0 — Concept** as its starting baseline. It is not a finished language; EXP-002 now adds an active **v0.1-experimental** symbolic candidate without erasing that origin. Git history, failed experiments, revisions, decision records, tests, and negative results are part of the research record.
 
 Chordic is inspired by the idea of tonal communication associated with Rocky in *Project Hail Mary*, but this project is developing its own original, testable system. Short user-provided expressions are retained only as communication goals and acceptance examples, not as an attempt to reproduce another work's language.
 
@@ -10,18 +10,19 @@ Chordic is inspired by the idea of tonal communication associated with Rocky in 
 
 | Metric | Status |
 | --- | --- |
-| Current language version | v0.0 — Concept |
-| Primitive concepts | 0 |
-| Grammar rules | 0 |
-| Canonical tonal forms | 0 |
-| Automated tests | 11 data-integrity tests |
-| Known tonal collisions | Not yet tested. |
+| Stable baseline | v0.0 — Concept |
+| Active experimental candidate | v0.1-experimental / EXP-002 |
+| Candidate reusable tokens | 61 |
+| Candidate routine benchmark | 17/17 normal cases ≤10 s at Rocky 3× |
+| Candidate normal mean | 6.794 s (CT2 baseline 8.030 s) |
+| Exact candidate lexical collisions | 0 in symbolic analysis |
+| Acoustic recognition | Not yet tested |
 | Reserved forms | 0 |
 | Human recognition accuracy | Not yet tested. |
 | Machine-generated recognition accuracy | Not yet tested. |
 | Human-generated recognition accuracy | Not yet tested. |
 
-The 11 current tests validate the v0.0 machine-readable data and repository invariants. They do **not** establish that Chordic audio, recognition, translation, or human usability works.
+The original v0.0 integrity tests remain. EXP-002 adds benchmark/timing/collision tests for a separate candidate profile. Passing them establishes symbolic structure and timing evidence only; it does **not** establish microphone recognition, human production/listening accuracy, or general free-English translation.
 
 ### Known limitations
 
@@ -62,7 +63,7 @@ Directories are added when needed rather than populated with fake complexity.
 
 Language versions represent capability/specification milestones, not repository activity. Adding files or code does not automatically advance the language.
 
-The current experimental language version remains **v0.0 — Concept** until evidence justifies a milestone change.
+**v0.0 — Concept** remains the preserved baseline. **v0.1-experimental / EXP-002** is the active candidate profile because it has measured symbolic timing evidence, but it is not stable and is not acoustically validated. See `language/candidates/exp-002-compact-conversation.json` and `docs/experiments/EXP-002-conversation-speed.md`.
 
 ## Running tests
 
