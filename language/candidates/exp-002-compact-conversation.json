@@ -1,0 +1,526 @@
+{
+  "schema_version": "0.1",
+  "candidate_id": "EXP-002",
+  "language_version": "0.1-experimental",
+  "status": "experimental-candidate",
+  "provenance": {
+    "baseline_repository": "whkoerner/rpa-1-rocky-pentapod",
+    "baseline_commit": "fceb7fe8cbcc5b42d3db0e208f6a323f79e2670a"
+  },
+  "recognition_scope": "symbolic/computational only; no microphone or human-produced acoustic recognition has been validated",
+  "timing": {
+    "phrase_header_ms": 450,
+    "profile_marker_ms": 200,
+    "note_ms": 140,
+    "inter_note_gap_ms": 35,
+    "token_boundary_ms": 100,
+    "playback_multiplier": 3
+  },
+  "synthesis_mapping": {
+    "0": "D4",
+    "1": "E4",
+    "2": "Fsharp4",
+    "3": "A4",
+    "4": "B4"
+  },
+  "code_families": {
+    "short_2_note": "high-frequency grammar/pronouns/social responses",
+    "root_3_note": "q=5 parity code (a,b,a+b mod 5), min within-family Hamming distance 2",
+    "root_4_note": "q=5 single-parity code, min within-family Hamming distance 2"
+  },
+  "tokens": [
+    {
+      "id": "SOCIAL.YES",
+      "scale_degrees": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "SOCIAL.NO",
+      "scale_degrees": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "GRAM.Q",
+      "scale_degrees": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "GRAM.NEG",
+      "scale_degrees": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "GRAM.IMP",
+      "scale_degrees": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "PRON.I",
+      "scale_degrees": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "PRON.YOU",
+      "scale_degrees": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "PRON.WE",
+      "scale_degrees": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "PRON.IT",
+      "scale_degrees": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "PRON.THIS",
+      "scale_degrees": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "PRON.THAT",
+      "scale_degrees": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "GRAM.PAST",
+      "scale_degrees": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "GRAM.FUT",
+      "scale_degrees": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "GRAM.VERY",
+      "scale_degrees": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "GRAM.SHOULD",
+      "scale_degrees": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "GRAM.POSS",
+      "scale_degrees": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "GRAM.AND",
+      "scale_degrees": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "GRAM.IF",
+      "scale_degrees": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "LOC.HERE",
+      "scale_degrees": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "LOC.WHERE",
+      "scale_degrees": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "GRAM.MILD",
+      "scale_degrees": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "SOCIAL.HELLO",
+      "scale_degrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "SOCIAL.GOODBYE",
+      "scale_degrees": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "SOCIAL.THANK_YOU",
+      "scale_degrees": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "ACTION.HELP",
+      "scale_degrees": [
+        0,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "ACTION.STOP",
+      "scale_degrees": [
+        0,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "ACTION.WAIT",
+      "scale_degrees": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ACTION.COME",
+      "scale_degrees": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ACTION.GO",
+      "scale_degrees": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "QUALITY.GOOD",
+      "scale_degrees": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "QUALITY.BAD",
+      "scale_degrees": [
+        1,
+        4,
+        0
+      ]
+    },
+    {
+      "id": "QUALITY.READY",
+      "scale_degrees": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "MENTAL.LIKE",
+      "scale_degrees": [
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "MENTAL.UNDERSTAND",
+      "scale_degrees": [
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "EVENT.HAPPEN",
+      "scale_degrees": [
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "ACTION.FIND",
+      "scale_degrees": [
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "id": "STATE.NEED",
+      "scale_degrees": [
+        3,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "ACTION.FIX",
+      "scale_degrees": [
+        3,
+        1,
+        4
+      ]
+    },
+    {
+      "id": "SOCIAL.PLEASE",
+      "scale_degrees": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "SOCIAL.SORRY",
+      "scale_degrees": [
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "id": "ACTION.REPEAT",
+      "scale_degrees": [
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "QUESTION.WHAT",
+      "scale_degrees": [
+        4,
+        0,
+        4
+      ]
+    },
+    {
+      "id": "TIME.NOW",
+      "scale_degrees": [
+        4,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "EMOTION.AMAZE",
+      "scale_degrees": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "ENTITY.VOICE",
+      "scale_degrees": [
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "EMOTION.FEAR",
+      "scale_degrees": [
+        4,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "ENTITY.ROBOT",
+      "scale_degrees": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ENTITY.MUSIC",
+      "scale_degrees": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "ENTITY.COMPUTER",
+      "scale_degrees": [
+        0,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "ENTITY.PROJECT",
+      "scale_degrees": [
+        0,
+        0,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "SOCIAL.FIST_BUMP",
+      "scale_degrees": [
+        0,
+        0,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "ACTION.WATCH",
+      "scale_degrees": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ENTITY.CREW",
+      "scale_degrees": [
+        0,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "EVENT.DIE",
+      "scale_degrees": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "ACTION.SAY",
+      "scale_degrees": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "ENTITY.ROCKY",
+      "scale_degrees": [
+        0,
+        1,
+        4,
+        0
+      ]
+    },
+    {
+      "id": "ENTITY.GRACE",
+      "scale_degrees": [
+        0,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "ENTITY.EARTH",
+      "scale_degrees": [
+        0,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "QUANT.MORE",
+      "scale_degrees": [
+        0,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "QUANT.LESS",
+      "scale_degrees": [
+        0,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "ENTITY.SPACE",
+      "scale_degrees": [
+        0,
+        2,
+        4,
+        1
+      ]
+    }
+  ],
+  "grammar": [
+    "Present/default time is unmarked.",
+    "Default clause order: subject, optional tense/modal, predicate, object/complement.",
+    "Quality/state predicates omit an English-style copula.",
+    "GRAM.Q prefixes questions.",
+    "GRAM.NEG immediately precedes the negated predicate.",
+    "GRAM.IMP prefixes commands; addressee omitted by default.",
+    "Pronouns are reused in subject/object positions.",
+    "English infinitive 'to' is omitted after modal/need-like predicates when unambiguous.",
+    "GRAM.VERY marks intensity; GRAM.MILD marks reduced degree."
+  ]
+}
