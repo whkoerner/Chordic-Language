@@ -14,12 +14,14 @@ Chordic is inspired by the idea of tonal communication associated with Rocky in 
 | Primitive concepts | 0 |
 | Grammar rules | 0 |
 | Canonical tonal forms | 0 |
-| Automated tests | 0 |
+| Automated tests | 11 data-integrity tests |
 | Known tonal collisions | Not yet tested. |
 | Reserved forms | 0 |
 | Human recognition accuracy | Not yet tested. |
 | Machine-generated recognition accuracy | Not yet tested. |
 | Human-generated recognition accuracy | Not yet tested. |
+
+The 11 current tests validate the v0.0 machine-readable data and repository invariants. They do **not** establish that Chordic audio, recognition, translation, or human usability works.
 
 ### Known limitations
 
@@ -64,7 +66,13 @@ The current experimental language version remains **v0.0 — Concept** until evi
 
 ## Running tests
 
-No automated test suite exists yet in this initial framework state. When tests are added, this section will contain exact commands.
+From the repository root, run:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The same suite runs automatically through GitHub Actions on pushes and pull requests.
 
 ## Licensing
 

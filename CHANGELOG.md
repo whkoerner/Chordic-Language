@@ -6,23 +6,34 @@ All meaningful Chordic language and research changes are recorded chronologicall
 
 ### Added
 
-- Initial repository framework work is in progress.
+- Machine-readable v0.0 scaffolding for dictionary, grammar, phonology, gestures, and acceptance examples.
+- All 11 required seed expressions as unsupported future acceptance targets with no invented translations.
+- Data-model documentation defining how unresolved and unsupported information is represented.
+- ADR-001 documenting the unresolved pitch-reference strategy and the evidence required before selection.
+- EXP-001, the planned first comparison of pitch-reference approaches.
+- 11 automated v0.0 data-integrity tests.
+- GitHub Actions validation on pushes and pull requests.
 
 ### Changed
 
-- Nothing yet.
+- README status now reports the actual v0.0 data/test state.
+- Roadmap now moves completed foundation work out of Current and makes EXP-001 the active research step.
 
 ### Test results
 
-- Not yet tested.
+- GitHub Actions run #1 passed on commit `ce26b17a402c942a4181c5ba2622bde8046d0d2e`.
+- 11 data-integrity tests passed.
+- Audio recognition, human production, translation, and usability remain untested.
 
 ### Experimental findings
 
-- Not yet tested.
+- Not yet tested. EXP-001 is planned but has not been run.
 
 ### Known limitations
 
-- Chordic has no defined phonology, grammar, canonical vocabulary, synthesis, recognition, or translation system yet.
+- Chordic still has no defined phonology, grammar, canonical vocabulary, synthesis, recognition, or translation system.
+- Collision tests currently protect future machine-readable invariants but have no canonical tonal forms to evaluate yet.
+- No human or acoustic evidence exists yet.
 
 ## [0.0] — 2026-10-04 — Concept
 

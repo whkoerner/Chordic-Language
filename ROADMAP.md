@@ -9,21 +9,24 @@ This roadmap tracks demonstrated capability, not just files or code written. A t
 - Experimental language baseline established at v0.0 — Concept.
 - Evidence-first and history-preservation principles established.
 - Split software/content licensing established.
+- Minimum v0.0 machine-readable data model created without inventing language rules.
+- All 11 required seed expressions preserved as unsupported future acceptance targets.
+- Initial automated language-data validation added and passed in GitHub Actions.
+- ADR-001 records that the pitch-reference strategy is intentionally undecided.
+- EXP-001 defines the first planned pitch-reference comparison.
 
 ## Current
 
-- Define the minimum machine-readable language-data model without inventing language rules.
-- Preserve the required seed expressions as future acceptance targets.
-- Add automated validation for repository language data.
-- Identify and document the first unresolved sound-design question.
-- Plan the first pitch-reference experiment.
+- Select a deliberately small set of non-language experimental tone patterns for EXP-001.
+- Define the scoring and collision criteria for EXP-001 before collecting results.
+- Run EXP-001 and preserve stimuli, scripts, raw results, and interpretation.
 
 ## Next
 
-- Run the first pitch-reference experiment and preserve its results.
-- Decide whether relative pitch, contour, normalization, another strategy, or a hybrid should advance to a candidate representation.
+- Decide whether relative pitch, contour, normalization, another strategy, or a hybrid should advance to a candidate representation based on evidence.
 - Define only the smallest sound inventory supported by evidence.
 - Add collision and legality tests as soon as canonical tonal forms exist.
+- Define the first primitive concepts only after a usable representation exists.
 - Consider v0.1 only when a tested sound inventory and initial primitive concepts actually exist.
 
 ## Later / research
