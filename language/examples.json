@@ -1,0 +1,101 @@
+{
+  "schema_version": "0.1",
+  "language_version": "0.0",
+  "status": "experimental",
+  "description": "User-provided communication goals retained as future acceptance targets. Unsupported items intentionally have no invented Chordic translation.",
+  "examples": [
+    {
+      "id": "SEED-001",
+      "english_concept": "amaze amaze amaze",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target for testing repetition, emphasis, or intensity mechanisms."
+    },
+    {
+      "id": "SEED-002",
+      "english_concept": "fist my bump",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target involving a social/action expression."
+    },
+    {
+      "id": "SEED-003",
+      "english_concept": "Rocky watch crew die. Could not fix. Grace say Grace will die, Rocky fix.",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target involving agents, observation, death, inability, repair, reported speech, and contrast across clauses."
+    },
+    {
+      "id": "SEED-004",
+      "english_concept": "I DON'T LIKE THAT VOICE! SCARY!",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target involving negation, preference, reference, voice/sound, fear, and strong affect."
+    },
+    {
+      "id": "SEED-005",
+      "english_concept": "That's not half bad.",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target for testing negation, scalar meaning, and idiom handling without assigning an arbitrary sentence code."
+    },
+    {
+      "id": "SEED-006",
+      "english_concept": "It's full good.",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target for testing reusable positive quality plus degree/intensity."
+    },
+    {
+      "id": "SEED-007",
+      "english_concept": "It is time go.",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target involving time/readiness and motion/action."
+    },
+    {
+      "id": "SEED-008",
+      "english_concept": "I like Earth.",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target involving speaker reference, preference, and a proper-world referent."
+    },
+    {
+      "id": "SEED-009",
+      "english_concept": "Medium-Rough-Texture Circle Planet.",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future compositional target involving degree, texture, shape, and planet/entity description."
+    },
+    {
+      "id": "SEED-010",
+      "english_concept": "Need more space for Rocky, much less space for Grace.",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "notes": "Future target involving need, quantity comparison, spatial allocation, named agents, and degree."
+    },
+    {
+      "id": "SEED-011",
+      "english_concept": "is time go",
+      "support_status": "unsupported",
+      "semantic_representation": null,
+      "chordic_form": null,
+      "gesture_requirement": {
+        "visual_description": "Positive Chordic gesture resembling a human thumbs-down gesture.",
+        "canonical_gesture_id": null,
+        "status": "not_yet_determined"
+      },
+      "notes": "Paired future acceptance target. The gesture's Chordic meaning must not be inferred from its human visual resemblance."
+    }
+  ]
+}
