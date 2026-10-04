@@ -26,15 +26,15 @@ The original v0.0 integrity tests remain. EXP-002 adds benchmark/timing/collisio
 
 ### Known limitations
 
-- Phonology: Not yet determined.
-- Pitch reference strategy: Not yet determined.
-- Word boundaries: Not yet determined.
-- Grammar: Not yet determined.
-- Dictionary: no canonical primitives have been defined.
-- Synthesis: Not yet implemented.
-- Recognition: Not yet implemented.
-- Translation: Not yet implemented.
-- Human usability: Not yet tested.
+- Stable/canonical phonology: not yet established; EXP-002 defines only a symbolic candidate profile.
+- Pitch reference strategy: still unresolved; the current note mapping exists for Rocky-compatible synthesis/timing experiments.
+- Boundaries: EXP-002 retains explicit token boundaries, but human/acoustic boundary recognition is not validated.
+- Grammar: EXP-002 has a compact candidate grammar; no grammar is stable yet.
+- Dictionary: EXP-002 has 61 candidate tokens; no vocabulary is stable/canonical yet.
+- Synthesis: Rocky-compatible timing/pitch mapping is defined for experiments, not as a final Chordic synthesizer.
+- Recognition: microphone and human-produced recognition are not implemented or validated.
+- Translation: benchmark intents have registered round trips; general free-English translation is not implemented.
+- Human usability: not yet tested.
 
 ## Development principle
 
