@@ -91,3 +91,30 @@ This future architecture strongly favors compact semantic tokens over spelling a
 Rocky is one runtime/test client for Chordic. Rocky may experiment with rendering styles, but it must not become a second source of truth for Chordic vocabulary or grammar.
 
 The current Rocky follow-up branch is testing a resonant rendering mode while retaining a pure-tone reference. Results from human listening and future recognition tests should flow back here as experiment evidence before any acoustic convention is promoted into a stable Chordic specification.
+
+
+## Second Windows listening session — refined acoustic requirements
+
+A second Rocky Windows session provided more specific failures:
+
+- the resonant candidate still sounded too robotic;
+- note changes felt too fast and too much like beeps;
+- desired Chordic character is lower, smoother, more continuous hum/rumble/vibration;
+- English voice lacked natural question cadence, pauses, and emotional weight;
+- desired translation scheduler is not simultaneous start:
+  - Chordic starts first;
+  - English follows roughly 0.5-1.0 seconds later;
+  - Chordic should normally finish slightly before English;
+  - Chordic should be slightly quieter than English so translation stays intelligible.
+
+This reinforces that the acoustic layer needs controlled experiments in continuity and envelope shape, not merely additional harmonics on short discrete tones.
+
+For future acoustic candidates, add explicit measures for:
+- transition smoothness;
+- note dwell time;
+- low-frequency energy/body;
+- perceived continuity between semantic units;
+- relative English/Chordic loudness;
+- whether the intended finish ordering is achieved.
+
+The supplied Rocky session was still using CT2. Long fallback sequences may make the requested finish ordering impossible without either compact semantic encoding or changed timing. Do not solve that limitation by silently changing Chordic semantics.

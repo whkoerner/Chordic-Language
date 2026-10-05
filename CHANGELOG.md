@@ -100,3 +100,5 @@ All meaningful Chordic language and research changes are recorded chronologicall
 - Added an experimental direction for resonant/biological/whale-like timbre while preserving semantic pitch identity.
 - Added the longer-term goal of streaming phone/computer recognition and incremental real-time translation.
 - No EXP-002 language rules changed in this documentation update.
+
+- Refined acoustic target after a second Windows session: slower continuous hum/rumble transitions, 0.5-1.0 s Chordic-first translation lead, lower Chordic mix level, and Chordic normally finishing just before English.
