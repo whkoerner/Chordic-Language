@@ -1,0 +1,450 @@
+{
+  "schema_version": "0.1",
+  "candidate_id": "EXP-002",
+  "playback_multiplier": 3,
+  "goal": "Routine normal Chordic should generally be 4-10 seconds; common expressions should be shorter.",
+  "rocky_ct2_baseline": {
+    "source_commit": "fceb7fe8cbcc5b42d3db0e208f6a323f79e2670a",
+    "starter_words": [
+      "hello",
+      "goodbye",
+      "yes",
+      "no",
+      "help",
+      "thank you",
+      "please",
+      "sorry",
+      "ready",
+      "wait",
+      "repeat",
+      "robot",
+      "music",
+      "computer",
+      "project"
+    ],
+    "timing_ms": {
+      "phrase_header": 450,
+      "ct2_marker": 200,
+      "token_case_marker_and_gap": 100,
+      "token_note": 140,
+      "token_note_gap": 35,
+      "token_boundary": 100,
+      "fallback_marker_and_gap": 100,
+      "fallback_byte": 65,
+      "fallback_default_gap": 15,
+      "fallback_space_gap": 100,
+      "fallback_minor_punctuation_gap": 150,
+      "fallback_sentence_punctuation_gap": 300,
+      "fallback_boundary": 100
+    }
+  },
+  "cases": [
+    {
+      "id": "C001",
+      "class": "common",
+      "english": "yes",
+      "tokens": [
+        "SOCIAL.YES"
+      ]
+    },
+    {
+      "id": "C002",
+      "class": "common",
+      "english": "no",
+      "tokens": [
+        "SOCIAL.NO"
+      ]
+    },
+    {
+      "id": "C003",
+      "class": "common",
+      "english": "hello",
+      "tokens": [
+        "SOCIAL.HELLO"
+      ]
+    },
+    {
+      "id": "C004",
+      "class": "common",
+      "english": "goodbye",
+      "tokens": [
+        "SOCIAL.GOODBYE"
+      ]
+    },
+    {
+      "id": "C005",
+      "class": "common",
+      "english": "thank you",
+      "tokens": [
+        "SOCIAL.THANK_YOU"
+      ]
+    },
+    {
+      "id": "C006",
+      "class": "common",
+      "english": "help",
+      "tokens": [
+        "ACTION.HELP"
+      ]
+    },
+    {
+      "id": "C007",
+      "class": "common",
+      "english": "stop",
+      "tokens": [
+        "ACTION.STOP"
+      ]
+    },
+    {
+      "id": "C008",
+      "class": "common",
+      "english": "wait",
+      "tokens": [
+        "ACTION.WAIT"
+      ]
+    },
+    {
+      "id": "C009",
+      "class": "common",
+      "english": "come",
+      "tokens": [
+        "ACTION.COME"
+      ]
+    },
+    {
+      "id": "C010",
+      "class": "common",
+      "english": "go",
+      "tokens": [
+        "ACTION.GO"
+      ]
+    },
+    {
+      "id": "C011",
+      "class": "common",
+      "english": "good",
+      "tokens": [
+        "QUALITY.GOOD"
+      ]
+    },
+    {
+      "id": "C012",
+      "class": "common",
+      "english": "bad",
+      "tokens": [
+        "QUALITY.BAD"
+      ]
+    },
+    {
+      "id": "N001",
+      "class": "normal",
+      "english": "I am ready.",
+      "tokens": [
+        "PRON.I",
+        "QUALITY.READY"
+      ]
+    },
+    {
+      "id": "N002",
+      "class": "normal",
+      "english": "Are you ready?",
+      "tokens": [
+        "GRAM.Q",
+        "PRON.YOU",
+        "QUALITY.READY"
+      ]
+    },
+    {
+      "id": "N003",
+      "class": "normal",
+      "english": "I like this.",
+      "tokens": [
+        "PRON.I",
+        "MENTAL.LIKE",
+        "PRON.THIS"
+      ]
+    },
+    {
+      "id": "N004",
+      "class": "normal",
+      "english": "I do not like this.",
+      "tokens": [
+        "PRON.I",
+        "GRAM.NEG",
+        "MENTAL.LIKE",
+        "PRON.THIS"
+      ]
+    },
+    {
+      "id": "N005",
+      "class": "normal",
+      "english": "That is good.",
+      "tokens": [
+        "PRON.THAT",
+        "QUALITY.GOOD"
+      ]
+    },
+    {
+      "id": "N006",
+      "class": "normal",
+      "english": "That is very good.",
+      "tokens": [
+        "PRON.THAT",
+        "GRAM.VERY",
+        "QUALITY.GOOD"
+      ]
+    },
+    {
+      "id": "N007",
+      "class": "normal",
+      "english": "Where are you?",
+      "tokens": [
+        "GRAM.Q",
+        "PRON.YOU",
+        "LOC.WHERE"
+      ]
+    },
+    {
+      "id": "N008",
+      "class": "normal",
+      "english": "Come here.",
+      "tokens": [
+        "GRAM.IMP",
+        "ACTION.COME",
+        "LOC.HERE"
+      ]
+    },
+    {
+      "id": "N009",
+      "class": "normal",
+      "english": "Wait for me.",
+      "tokens": [
+        "GRAM.IMP",
+        "ACTION.WAIT",
+        "PRON.I"
+      ]
+    },
+    {
+      "id": "N010",
+      "class": "normal",
+      "english": "I understand.",
+      "tokens": [
+        "PRON.I",
+        "MENTAL.UNDERSTAND"
+      ]
+    },
+    {
+      "id": "N011",
+      "class": "normal",
+      "english": "I do not understand.",
+      "tokens": [
+        "PRON.I",
+        "GRAM.NEG",
+        "MENTAL.UNDERSTAND"
+      ]
+    },
+    {
+      "id": "N012",
+      "class": "normal",
+      "english": "What happened?",
+      "tokens": [
+        "GRAM.Q",
+        "QUESTION.WHAT",
+        "GRAM.PAST",
+        "EVENT.HAPPEN"
+      ]
+    },
+    {
+      "id": "N013",
+      "class": "normal",
+      "english": "We should go.",
+      "tokens": [
+        "PRON.WE",
+        "GRAM.SHOULD",
+        "ACTION.GO"
+      ]
+    },
+    {
+      "id": "N014",
+      "class": "normal",
+      "english": "I will help you.",
+      "tokens": [
+        "PRON.I",
+        "GRAM.FUT",
+        "ACTION.HELP",
+        "PRON.YOU"
+      ]
+    },
+    {
+      "id": "N015",
+      "class": "normal",
+      "english": "You helped me.",
+      "tokens": [
+        "PRON.YOU",
+        "GRAM.PAST",
+        "ACTION.HELP",
+        "PRON.I"
+      ]
+    },
+    {
+      "id": "N016",
+      "class": "normal",
+      "english": "I found it.",
+      "tokens": [
+        "PRON.I",
+        "GRAM.PAST",
+        "ACTION.FIND",
+        "PRON.IT"
+      ]
+    },
+    {
+      "id": "N017",
+      "class": "normal",
+      "english": "We need to fix this.",
+      "tokens": [
+        "PRON.WE",
+        "STATE.NEED",
+        "ACTION.FIX",
+        "PRON.THIS"
+      ]
+    },
+    {
+      "id": "S001",
+      "class": "seed",
+      "english": "amaze amaze amaze",
+      "tokens": [
+        "EMOTION.AMAZE",
+        "EMOTION.AMAZE",
+        "EMOTION.AMAZE"
+      ]
+    },
+    {
+      "id": "S002",
+      "class": "seed",
+      "english": "fist my bump",
+      "tokens": [
+        "SOCIAL.FIST_BUMP"
+      ]
+    },
+    {
+      "id": "S003",
+      "class": "seed",
+      "english": "I DON'T LIKE THAT VOICE! SCARY!",
+      "tokens": [
+        "PRON.I",
+        "GRAM.NEG",
+        "MENTAL.LIKE",
+        "PRON.THAT",
+        "ENTITY.VOICE",
+        "GRAM.VERY",
+        "EMOTION.FEAR"
+      ]
+    },
+    {
+      "id": "S004",
+      "class": "seed",
+      "english": "That's not half bad",
+      "tokens": [
+        "PRON.THAT",
+        "GRAM.MILD",
+        "QUALITY.GOOD"
+      ]
+    },
+    {
+      "id": "S005",
+      "class": "seed",
+      "english": "It's full good",
+      "tokens": [
+        "PRON.IT",
+        "GRAM.VERY",
+        "QUALITY.GOOD"
+      ]
+    },
+    {
+      "id": "S006",
+      "class": "seed",
+      "english": "It is time go",
+      "tokens": [
+        "TIME.NOW",
+        "ACTION.GO"
+      ]
+    },
+    {
+      "id": "S007",
+      "class": "seed",
+      "english": "I like Earth.",
+      "tokens": [
+        "PRON.I",
+        "MENTAL.LIKE",
+        "ENTITY.EARTH"
+      ]
+    },
+    {
+      "id": "S008",
+      "class": "seed",
+      "english": "Rocky watch crew die. Could not fix. Grace say Grace will die, Rocky fix.",
+      "tokens": [
+        "ENTITY.ROCKY",
+        "GRAM.PAST",
+        "ACTION.WATCH",
+        "ENTITY.CREW",
+        "EVENT.DIE",
+        "GRAM.NEG",
+        "ACTION.FIX",
+        "ENTITY.GRACE",
+        "ACTION.SAY",
+        "ENTITY.GRACE",
+        "GRAM.FUT",
+        "EVENT.DIE",
+        "ENTITY.ROCKY",
+        "ACTION.FIX"
+      ]
+    }
+  ],
+  "measured_results": {
+    "normal": {
+      "baseline": {
+        "mean_seconds": 8.03,
+        "median_seconds": 7.275,
+        "max_seconds": 10.875,
+        "percent_at_or_below_10_seconds": 94.1,
+        "count_over_10_seconds": 1,
+        "count_over_20_seconds": 0
+      },
+      "candidate": {
+        "mean_seconds": 6.794,
+        "median_seconds": 6.525,
+        "max_seconds": 8.4,
+        "percent_at_or_below_10_seconds": 100,
+        "count_over_10_seconds": 0,
+        "count_over_20_seconds": 0
+      }
+    },
+    "common": {
+      "baseline": {
+        "mean_seconds": 4.421
+      },
+      "candidate": {
+        "mean_seconds": 3.738
+      }
+    },
+    "seed": {
+      "baseline": {
+        "mean_seconds": 10.022,
+        "max_seconds": 26.355
+      },
+      "candidate": {
+        "mean_seconds": 10.322,
+        "max_seconds": 31.35
+      }
+    }
+  },
+  "collision_summary": {
+    "entry_count": 61,
+    "exact_collision_count": 0,
+    "benchmark_sequence_collision_count": 0,
+    "framed_prefix_ambiguity_count": 0,
+    "short_near_collisions_exist": true,
+    "scope": "symbolic only"
+  }
+}
