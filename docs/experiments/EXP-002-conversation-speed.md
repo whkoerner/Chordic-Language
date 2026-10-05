@@ -82,3 +82,65 @@ The new `test_exp002.py` imports `tools.exp002_benchmark`, recomputes the timing
 ## Decision
 
 Accept EXP-002 as a **candidate experimental profile**, not a stable language release. It demonstrates a real structural speed improvement while preserving explicit grammar and honest ambiguity limitations. The next high-value experiment is generated-audio/human recognition of the shortest distance-1 forms, alongside the still-unresolved pitch-reference work from EXP-001.
+
+## Post-merge engineering evidence — 2026-10-04
+
+EXP-002 was merged through Chordic PR #1, **`EXP-002: benchmark and compact conversational Chordic candidate`**, as merge commit `5259ca4e2348c319e8fd6ceda4a22dc84e259548`. The merged-main Chordic validation run #15 passed.
+
+The committed benchmark corpus and candidate data independently reproduce the published results at unchanged Rocky 3× timing:
+
+| Metric | Rocky CT2 baseline | EXP-002 candidate |
+| --- | ---: | ---: |
+| Reusable candidate tokens | — | 61 |
+| Benchmark cases | 37 | 37 |
+| Normal cases | 17 | 17 |
+| Mean normal duration | 8.030 s | **6.794 s** |
+| Maximum normal duration | 10.875 s | **8.400 s** |
+| Normal cases ≤10 s | 94.1% | **100.0%** |
+| Exact lexical-form collisions | — | **0** |
+| Duplicate benchmark token sequences | — | **0** |
+
+These are symbolic/timing results. They are **NOT ACOUSTICALLY VERIFIED**. They do not establish human listening accuracy, microphone recognition, pitch-range robustness, noise/reverberation robustness, or human production accuracy.
+
+The important negative result remains preserved. Benchmark seed `S008` — `Rocky watch crew die. Could not fix. Grace say Grace will die, Rocky fix.` — measured **26.355 s** through the frozen CT2/free-English baseline and **31.350 s** through the EXP-002 candidate at 3×. It was intentionally not replaced with an opaque whole-sentence token to make the benchmark look better.
+
+### Cross-repository Rocky integration evidence
+
+Rocky PR #11, `Test Chordic EXP-002 through Rocky timing and Brain boundary`, merged EXP-002 as a pinned, read-only integration snapshot. This is **cross-repository integration evidence, not a Chordic-language failure**.
+
+The integration exposed useful architecture/test failures:
+
+- Rocky Actions run #42: **FAIL** — the first Brain integration test backend used `SimulatorHardware`, which was unsuitable for arbitrary `ConversationOutput` dispatch.
+- Runs #43 and #44: **FAIL** — the replacement communication-only backend omitted `Capability.TEXT_COMMUNICATION`; `SafetyValidator` correctly rejected the conversational utterance.
+- The corrected backend declared text communication while retaining **no motion capability**.
+- Rocky Actions run #45: **PASS** — Windows and Ubuntu, Python 3.12 and 3.13, plus Arduino Uno compilation passed.
+- Rocky merged-main run #46: **PASS**.
+
+No production Brain, SafetyValidator, hardware, CT1/CT2, launcher, or audio behavior was changed by that integration test work.
+
+### Real desktop observation: CT2/free-English fallback remained long
+
+After Rocky's personality was shortened and made more telegraphic, a real desktop session still produced long production CT2/free-English fallback playback. User-reported approximate observed durations were:
+
+- **14.07 s**
+- **50.84 s**
+- **35.06 s**
+- **24.32 s**
+
+These are **MANUAL PASS** observations of current runtime behavior, not EXP-002 benchmark measurements. They **do not mean EXP-002 took 50 seconds**. The observation supports a narrower engineering conclusion: shortening English prose alone does not solve the structural fallback problem. EXP-002, or a successor compact compositional representation, still needs to be wired into actual runtime playback before production conversation can benefit from the experiment's structural timing gains.
+
+The four desktop timings are not currently backed by a committed machine-readable timing log in this repository; they remain manual runtime evidence.
+
+### Authority and next milestone
+
+Chordic-Language remains authoritative for Chordic language design. Rocky should consume pinned/versioned exports or snapshots for integration and must not independently redefine Chordic token assignments or grammar.
+
+The next experiment/runtime milestone is:
+
+1. production desktop use of EXP-002 or a successor compact representation;
+2. explicit fallback semantics for concepts outside the current candidate;
+3. actual acoustic/listening evaluation, including microphones, pitch ranges, noise/reverb, and human production;
+4. optional persistent translated English speech as a separate presentation layer rather than part of Chordic's core encoding.
+
+See [the EXP-002 engineering evidence and bug ledger](../history/exp-002-engineering-evidence.md) for the detailed hypothesis/failure/fix chronology.
+
