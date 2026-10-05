@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1",
+  "experiment_id": "EXP-004-natural-carrier-plan-v0",
+  "source_export": "EXP-003-runtime-v3",
+  "date": "2026-10-05",
+  "purpose": "Preserve EXP-003 semantics/timing while defining a smooth renderer-neutral natural-vocal carrier trajectory for later offline vocoder experiments.",
+  "default_multiplier": 2,
+  "cases": [
+    {
+      "id": "C001",
+      "english": "Rocky calculate. 64. Good."
+    },
+    {
+      "id": "C002",
+      "english": "Rocky no eat. Rocky think food is energy."
+    },
+    {
+      "id": "C003",
+      "english": "Amaze amaze amaze!"
+    },
+    {
+      "id": "C004",
+      "english": "What Rocky think?"
+    }
+  ],
+  "automated_acceptance": {
+    "semantic_coverage_percent": 100,
+    "fallback_spans": 0,
+    "f0_band_hz": [
+      80,
+      180
+    ],
+    "max_abs_micro_jitter_semitones": 0.08,
+    "boundary_remains_voiced": true,
+    "deterministic": true,
+    "semantic_codes_unchanged_from_exp003": true,
+    "timing_unchanged_from_exp003": true
+  },
+  "subjective_acceptance": {
+    "natural_low_rumble": true,
+    "low_register_tonal_bird_call": true,
+    "avoids_alarm_whistle_midi": true,
+    "status": "NOT_RUN_REQUIRES_HUMAN_LISTENING"
+  },
+  "external_renderer_candidates": [
+    "WORLD/PyWORLD natural carrier resynthesis",
+    "Praat/Parselmouth pitch/formant manipulation"
+  ]
+}
