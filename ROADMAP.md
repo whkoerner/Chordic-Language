@@ -21,9 +21,14 @@ This roadmap tracks demonstrated capability, not just files or code written. A t
 - Run EXP-001 / acoustic follow-up work to determine whether the shortest candidate forms are human- and machine-distinguishable across pitch ranges.
 - Test the known distance-1 short-form neighbors with generated audio, microphones, and listeners.
 - Preserve explicit token boundaries unless recognition evidence supports a safer/faster alternative.
+- Keep Chordic-Language authoritative; Rocky should consume pinned/versioned exports or snapshots instead of redefining Chordic independently.
 
 ## Next
 
+- Wire EXP-002 or a successor into production desktop playback through a pinned/versioned Chordic export; do not treat current CT2/free-English fallback timing as EXP-002 timing.
+- Define explicit fallback semantics for concepts outside the current compact candidate and measure fallback frequency in real conversation.
+- Run actual acoustic/listening evaluation across microphones, pitch ranges, noise/reverberation, and human production; symbolic collision tests are not sufficient.
+- Evaluate optional persistent translated English speech as a separate presentation layer rather than part of Chordic's core encoding.
 - Decide whether relative pitch, contour, normalization, another strategy, or a hybrid should replace the current synthesis-only pitch mapping based on acoustic evidence.
 - Reassign or lengthen short forms that fail listener/microphone distinction tests.
 - Extend comparison/quantity grammar needed by remaining unsupported seed concepts.
