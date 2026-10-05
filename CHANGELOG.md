@@ -91,3 +91,12 @@ All meaningful Chordic language and research changes are recorded chronologicall
 
 - No language behavior has been defined yet.
 - No human or machine recognition experiments have been run.
+
+
+## 2026-10-04 — Post-merge acoustic feedback captured
+
+- Recorded first Windows operator feedback from Rocky's audible Chordic + English translation path.
+- Functional audibility passed; current pure tonal character and English voice still need subjective tuning.
+- Added an experimental direction for resonant/biological/whale-like timbre while preserving semantic pitch identity.
+- Added the longer-term goal of streaming phone/computer recognition and incremental real-time translation.
+- No EXP-002 language rules changed in this documentation update.
